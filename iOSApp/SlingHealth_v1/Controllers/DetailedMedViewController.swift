@@ -131,13 +131,13 @@ class DetailedMedViewController: UIViewController, UITableViewDataSource, UITabl
 //        vc.prescriberInput.text = medication.prescriber
         
         vc.medication = medication
-        vc.oldName = medication.name
-        vc.oldDose = medication.dose
-        if medication.notes != nil { //Notes not a required field so could be nil
-            vc.oldNotes = medication.notes
-        }
-        vc.oldPrescriber = medication.prescriber
-        vc.oldStillTaking = medication.stillTaking
+//        vc.oldName = medication.name
+//        vc.oldDose = medication.dose
+//        if medication.notes != nil { //Notes not a required field so could be nil
+//            vc.oldNotes = medication.notes
+//        }
+//        vc.oldPrescriber = medication.prescriber
+//        vc.oldStillTaking = medication.stillTaking
     }
     
     

@@ -20,7 +20,7 @@ class FormMedViewController: UIViewController, UIPickerViewDelegate, UIPickerVie
     //Make user public static in profile/health/i dont know file
     var user = Auth.auth().currentUser;
 
-    let frequencyData = ["Every 2 hours", "Four times a day", "Three times a day", "Twice a day", "Once a day", "Every Two Days", "Once a week"]
+    let frequencyData = ["Once a day", "Twice a day", "Three times a day", "Four times a day", "Every two days", "Once a week", "As needed"]
     
     
     @IBOutlet weak var nameInput: UITextField!
@@ -35,18 +35,7 @@ class FormMedViewController: UIViewController, UIPickerViewDelegate, UIPickerVie
     var medication : Medication?
     var medId : Int?
     
-    //For editing
-    var oldName : String?
-    var oldDose : String?
-    
-    //FIXME
-    //Missing oldDate
-    //Missing oldFrequency
-    
-    var oldNotes : String?
-    var oldPrescriber : String?
-    var oldStillTaking: Bool?
-    
+    var reasonLabel : UILabel!
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -55,6 +44,29 @@ class FormMedViewController: UIViewController, UIPickerViewDelegate, UIPickerVie
         
         dateInput.setDate(Date(), animated: false)
         
+        
+        //FIXME
+        // - Make custom view subview containing the label and list of reasons.
+        // - Change placement to be correct in scroll view.
+        // - Does not dynamically change size. Just can appear and disappear which
+        //would look weird with a ton of empty space
+        //
+        //IDEA: place in storyboard and just toggle hidden field in code
+        //rather than creating it programmatically. I couldn't figure out
+        //how to "scroll" in the scroll view in storyboard.
+        reasonLabel = UILabel(frame: CGRect(x: 0, y: 0, width: 200, height: 21))
+        reasonLabel.center = CGPoint(x: 160, y: 284)
+        reasonLabel.text = "TESTING THIS THING"
+        
+        
+        setUpFieldsForEdit()
+        
+        if stillTakingSwitch.isOn {
+            self.view.addSubview(reasonLabel)
+        }
+    }
+    
+    func setUpFieldsForEdit() {
         guard let med = medication else {
             print("medication does not already exist")
             return
@@ -65,7 +77,9 @@ class FormMedViewController: UIViewController, UIPickerViewDelegate, UIPickerVie
         //FIXME
         //Once everything is established, can probably get rid of all the nil checks
         //except on Notes because a med should have all these categories filled,
-        //so the check for med above should be enough
+        //so the check for med above should be enough. But probably keep through
+        //Sling Health deadline because helps spot bugs and won't crash if
+        //database changes
         
         //If editing then prefill forms
         if med.name != nil {
@@ -79,20 +93,6 @@ class FormMedViewController: UIViewController, UIPickerViewDelegate, UIPickerVie
             dateInput.setDate(med.startDate, animated: false)
         }
         
-        //FIXME
-        //Missing oldFrequency
-        print("med.frequency: \(med.frequency)")
-//        frequencyInput.value
-//        frequencyInput = med.frequency
-        if med.frequency != nil {
-            guard let row = frequencyData.firstIndex(of: med.frequency) else {
-                print("invalid frequency")
-                return
-            }
-            print("first inde of freq is: \(row)")
-            frequencyInput.selectRow(row, inComponent: 0, animated: false)
-        }
-        
         if med.notes != nil {
             notesInput.text = med.notes
         }
@@ -101,6 +101,14 @@ class FormMedViewController: UIViewController, UIPickerViewDelegate, UIPickerVie
         }
         if med.stillTaking != nil {
             stillTakingSwitch.setOn(med.stillTaking!, animated: false)
+        }
+        
+        if med.frequency != nil {
+            guard let row = frequencyData.firstIndex(of: med.frequency) else {
+                print("invalid frequency")
+                return
+            }
+            frequencyInput.selectRow(row, inComponent: 0, animated: false)
         }
     }
     
@@ -155,6 +163,18 @@ class FormMedViewController: UIViewController, UIPickerViewDelegate, UIPickerVie
             self.present(alert, animated: true)
         }
     }
+    
+    @IBAction func stillTakingChanged(_ sender: Any) {
+        print("start stillTakingChanged")
+        if stillTakingSwitch.isOn {
+            self.view.addSubview(reasonLabel)
+        }
+        else {
+            reasonLabel.removeFromSuperview()
+        }
+        print("end stillTakingChanged")
+    }
+    
     
     
     func numberOfComponents(in pickerView: UIPickerView) -> Int {
