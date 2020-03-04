@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>CLIENT_ID</key>
+	<string>326212221302-kc2vb59mn2b0gv5lrbc5pft7skjs7a74.apps.googleusercontent.com</string>
+	<key>REVERSED_CLIENT_ID</key>
+	<string>com.googleusercontent.apps.326212221302-kc2vb59mn2b0gv5lrbc5pft7skjs7a74</string>
+	<key>API_KEY</key>
+	<string>AIzaSyDAgSNWdcT98SzRF3D8V-JvdJWmn0gxdc0</string>
+	<key>GCM_SENDER_ID</key>
+	<string>326212221302</string>
+	<key>PLIST_VERSION</key>
+	<string>1</string>
+	<key>BUNDLE_ID</key>
+	<string>com.Personal.SlingHealth-v1</string>
+	<key>PROJECT_ID</key>
+	<string>slinghealth-73895</string>
+	<key>STORAGE_BUCKET</key>
+	<string>slinghealth-73895.appspot.com</string>
+	<key>IS_ADS_ENABLED</key>
+	<false></false>
+	<key>IS_ANALYTICS_ENABLED</key>
+	<false></false>
+	<key>IS_APPINVITE_ENABLED</key>
+	<true></true>
+	<key>IS_GCM_ENABLED</key>
+	<true></true>
+	<key>IS_SIGNIN_ENABLED</key>
+	<true></true>
+	<key>GOOGLE_APP_ID</key>
+	<string>1:326212221302:ios:ee3bab3756fdc76a652257</string>
+	<key>DATABASE_URL</key>
+	<string>https://slinghealth-73895.firebaseio.com</string>
+</dict>
+</plist>

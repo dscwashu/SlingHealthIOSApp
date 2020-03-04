@@ -1,0 +1,548 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 51;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		3377214E23D54CE200AB9BE6 /* MedsTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3377214D23D54CE200AB9BE6 /* MedsTableViewController.swift */; };
+		3377215023D554FA00AB9BE6 /* Medication.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3377214F23D554FA00AB9BE6 /* Medication.swift */; };
+		3377215423D55B9A00AB9BE6 /* FormMedViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3377215323D55B9A00AB9BE6 /* FormMedViewController.swift */; };
+		3377215623D5620E00AB9BE6 /* MedFrequencyPicker.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3377215523D5620E00AB9BE6 /* MedFrequencyPicker.swift */; };
+		33C2A8CE23E9372F00621E56 /* DetailedMedViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 33C2A8CD23E9372F00621E56 /* DetailedMedViewController.swift */; };
+		7A79B687E50DEEE5A0A9FD0E /* Pods_SlingHealth_v1.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1B16689F832C9DE59E9798FB /* Pods_SlingHealth_v1.framework */; };
+		B32559C223FF26E40005730E /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B32A36E023AE318C00901DA2 /* Main.storyboard */; };
+		B32A36DD23AE318C00901DA2 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B32A36DC23AE318C00901DA2 /* AppDelegate.swift */; };
+		B32A36DF23AE318C00901DA2 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B32A36DE23AE318C00901DA2 /* ViewController.swift */; };
+		B32A36E523AE318C00901DA2 /* SlingHealth_v1.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = B32A36E323AE318C00901DA2 /* SlingHealth_v1.xcdatamodeld */; };
+		B32A36E723AE318D00901DA2 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B32A36E623AE318D00901DA2 /* Assets.xcassets */; };
+		B32A36EA23AE318D00901DA2 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B32A36E823AE318D00901DA2 /* LaunchScreen.storyboard */; };
+		B32A370E23AE3AE900901DA2 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = B32A370D23AE3AE900901DA2 /* GoogleService-Info.plist */; };
+		B32A371123AE3ED100901DA2 /* SignInViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B32A370F23AE3ED100901DA2 /* SignInViewController.swift */; };
+		B32A371523AE40FC00901DA2 /* CreateAccountViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B32A371323AE40FB00901DA2 /* CreateAccountViewController.swift */; };
+		B32A371823AE420300901DA2 /* UtilityFunctions.swift in Sources */ = {isa = PBXBuildFile; fileRef = B32A371723AE420300901DA2 /* UtilityFunctions.swift */; };
+		B3451F4C23ED3F21000911E6 /* InsuranceCardFrontTemp.png in Resources */ = {isa = PBXBuildFile; fileRef = B3451F4A23ED3F20000911E6 /* InsuranceCardFrontTemp.png */; };
+		B3451F4D23ED3F21000911E6 /* InsuranceCardBackTemp.png in Resources */ = {isa = PBXBuildFile; fileRef = B3451F4B23ED3F21000911E6 /* InsuranceCardBackTemp.png */; };
+		B3451F4F23ED40F6000911E6 /* InsuranceCardViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B3451F4E23ED40F6000911E6 /* InsuranceCardViewController.swift */; };
+		B3B41E1A23D6752500669DC2 /* HealthProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B3B41E1923D6752500669DC2 /* HealthProfileViewController.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		0746216DF15012362737BBCA /* Pods-SlingHealth_v1-SlingHealth_v1UITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SlingHealth_v1-SlingHealth_v1UITests.debug.xcconfig"; path = "Target Support Files/Pods-SlingHealth_v1-SlingHealth_v1UITests/Pods-SlingHealth_v1-SlingHealth_v1UITests.debug.xcconfig"; sourceTree = "<group>"; };
+		1B16689F832C9DE59E9798FB /* Pods_SlingHealth_v1.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SlingHealth_v1.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		3377214D23D54CE200AB9BE6 /* MedsTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MedsTableViewController.swift; sourceTree = "<group>"; };
+		3377214F23D554FA00AB9BE6 /* Medication.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Medication.swift; sourceTree = "<group>"; };
+		3377215323D55B9A00AB9BE6 /* FormMedViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FormMedViewController.swift; sourceTree = "<group>"; };
+		3377215523D5620E00AB9BE6 /* MedFrequencyPicker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MedFrequencyPicker.swift; sourceTree = "<group>"; };
+		33C2A8CD23E9372F00621E56 /* DetailedMedViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailedMedViewController.swift; sourceTree = "<group>"; };
+		49187506C09AA260F6C15958 /* Pods-SlingHealth_v1Tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SlingHealth_v1Tests.release.xcconfig"; path = "Target Support Files/Pods-SlingHealth_v1Tests/Pods-SlingHealth_v1Tests.release.xcconfig"; sourceTree = "<group>"; };
+		B32A36D923AE318C00901DA2 /* SlingHealth_v1.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SlingHealth_v1.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		B32A36DC23AE318C00901DA2 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		B32A36DE23AE318C00901DA2 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		B32A36E123AE318C00901DA2 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		B32A36E423AE318C00901DA2 /* SlingHealth_v1.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = SlingHealth_v1.xcdatamodel; sourceTree = "<group>"; };
+		B32A36E623AE318D00901DA2 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		B32A36E923AE318D00901DA2 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		B32A36EB23AE318D00901DA2 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		B32A36F423AE318D00901DA2 /* SlingHealth_v1Tests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SlingHealth_v1Tests.swift; sourceTree = "<group>"; };
+		B32A36F623AE318D00901DA2 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		B32A36FF23AE318D00901DA2 /* SlingHealth_v1UITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SlingHealth_v1UITests.swift; sourceTree = "<group>"; };
+		B32A370123AE318D00901DA2 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		B32A370D23AE3AE900901DA2 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		B32A370F23AE3ED100901DA2 /* SignInViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignInViewController.swift; sourceTree = "<group>"; };
+		B32A371323AE40FB00901DA2 /* CreateAccountViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreateAccountViewController.swift; sourceTree = "<group>"; };
+		B32A371723AE420300901DA2 /* UtilityFunctions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UtilityFunctions.swift; sourceTree = "<group>"; };
+		B3451F4A23ED3F20000911E6 /* InsuranceCardFrontTemp.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = InsuranceCardFrontTemp.png; sourceTree = "<group>"; };
+		B3451F4B23ED3F21000911E6 /* InsuranceCardBackTemp.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = InsuranceCardBackTemp.png; sourceTree = "<group>"; };
+		B3451F4E23ED40F6000911E6 /* InsuranceCardViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InsuranceCardViewController.swift; sourceTree = "<group>"; };
+		B3B41E1923D6752500669DC2 /* HealthProfileViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HealthProfileViewController.swift; sourceTree = "<group>"; };
+		E218EDB6FD5E0D0AF2EAF6C4 /* Pods-SlingHealth_v1.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SlingHealth_v1.debug.xcconfig"; path = "Target Support Files/Pods-SlingHealth_v1/Pods-SlingHealth_v1.debug.xcconfig"; sourceTree = "<group>"; };
+		E6B72B83E89A676A1F832AE4 /* Pods_SlingHealth_v1Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SlingHealth_v1Tests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		EA93CD659CA1A4FABCCF7355 /* Pods_SlingHealth_v1_SlingHealth_v1UITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SlingHealth_v1_SlingHealth_v1UITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		F2637C431E3D72B6CABE4E4E /* Pods-SlingHealth_v1-SlingHealth_v1UITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SlingHealth_v1-SlingHealth_v1UITests.release.xcconfig"; path = "Target Support Files/Pods-SlingHealth_v1-SlingHealth_v1UITests/Pods-SlingHealth_v1-SlingHealth_v1UITests.release.xcconfig"; sourceTree = "<group>"; };
+		F7C7AA40F87F8D5CBD23F85D /* Pods-SlingHealth_v1.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SlingHealth_v1.release.xcconfig"; path = "Target Support Files/Pods-SlingHealth_v1/Pods-SlingHealth_v1.release.xcconfig"; sourceTree = "<group>"; };
+		FE90EEEFE05BB5405D4C0FC9 /* Pods-SlingHealth_v1Tests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SlingHealth_v1Tests.debug.xcconfig"; path = "Target Support Files/Pods-SlingHealth_v1Tests/Pods-SlingHealth_v1Tests.debug.xcconfig"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		B32A36D623AE318C00901DA2 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7A79B687E50DEEE5A0A9FD0E /* Pods_SlingHealth_v1.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		833B9B62B4E208232835650E /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				1B16689F832C9DE59E9798FB /* Pods_SlingHealth_v1.framework */,
+				EA93CD659CA1A4FABCCF7355 /* Pods_SlingHealth_v1_SlingHealth_v1UITests.framework */,
+				E6B72B83E89A676A1F832AE4 /* Pods_SlingHealth_v1Tests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		B32A36D023AE318C00901DA2 = {
+			isa = PBXGroup;
+			children = (
+				B32A36DB23AE318C00901DA2 /* SlingHealth_v1 */,
+				B32A36F323AE318D00901DA2 /* SlingHealth_v1Tests */,
+				B32A36FE23AE318D00901DA2 /* SlingHealth_v1UITests */,
+				B32A36DA23AE318C00901DA2 /* Products */,
+				DAA83BEE8C7A1F0B3223FB2C /* Pods */,
+				833B9B62B4E208232835650E /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		B32A36DA23AE318C00901DA2 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				B32A36D923AE318C00901DA2 /* SlingHealth_v1.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		B32A36DB23AE318C00901DA2 /* SlingHealth_v1 */ = {
+			isa = PBXGroup;
+			children = (
+				B3451F4823ED3F01000911E6 /* Support Files */,
+				B3451F4723ED3E9D000911E6 /* Models */,
+				B3451F4623ED3E25000911E6 /* Controllers */,
+				B32A36DC23AE318C00901DA2 /* AppDelegate.swift */,
+				B32A370D23AE3AE900901DA2 /* GoogleService-Info.plist */,
+				B32A36E023AE318C00901DA2 /* Main.storyboard */,
+				B32A36E623AE318D00901DA2 /* Assets.xcassets */,
+				B32A36E823AE318D00901DA2 /* LaunchScreen.storyboard */,
+				B32A36EB23AE318D00901DA2 /* Info.plist */,
+				3377215523D5620E00AB9BE6 /* MedFrequencyPicker.swift */,
+				B32A36E323AE318C00901DA2 /* SlingHealth_v1.xcdatamodeld */,
+			);
+			path = SlingHealth_v1;
+			sourceTree = "<group>";
+		};
+		B32A36F323AE318D00901DA2 /* SlingHealth_v1Tests */ = {
+			isa = PBXGroup;
+			children = (
+				B32A36F423AE318D00901DA2 /* SlingHealth_v1Tests.swift */,
+				B32A36F623AE318D00901DA2 /* Info.plist */,
+			);
+			path = SlingHealth_v1Tests;
+			sourceTree = "<group>";
+		};
+		B32A36FE23AE318D00901DA2 /* SlingHealth_v1UITests */ = {
+			isa = PBXGroup;
+			children = (
+				B32A36FF23AE318D00901DA2 /* SlingHealth_v1UITests.swift */,
+				B32A370123AE318D00901DA2 /* Info.plist */,
+			);
+			path = SlingHealth_v1UITests;
+			sourceTree = "<group>";
+		};
+		B3451F4623ED3E25000911E6 /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				B32A36DE23AE318C00901DA2 /* ViewController.swift */,
+				B3B41E1923D6752500669DC2 /* HealthProfileViewController.swift */,
+				B32A370F23AE3ED100901DA2 /* SignInViewController.swift */,
+				B32A371323AE40FB00901DA2 /* CreateAccountViewController.swift */,
+				3377215323D55B9A00AB9BE6 /* FormMedViewController.swift */,
+				33C2A8CD23E9372F00621E56 /* DetailedMedViewController.swift */,
+				3377214D23D54CE200AB9BE6 /* MedsTableViewController.swift */,
+				B3451F4E23ED40F6000911E6 /* InsuranceCardViewController.swift */,
+			);
+			path = Controllers;
+			sourceTree = "<group>";
+		};
+		B3451F4723ED3E9D000911E6 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				3377214F23D554FA00AB9BE6 /* Medication.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		B3451F4823ED3F01000911E6 /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				B32A371723AE420300901DA2 /* UtilityFunctions.swift */,
+				B3451F4923ED3F0D000911E6 /* Images */,
+			);
+			path = "Support Files";
+			sourceTree = "<group>";
+		};
+		B3451F4923ED3F0D000911E6 /* Images */ = {
+			isa = PBXGroup;
+			children = (
+				B3451F4B23ED3F21000911E6 /* InsuranceCardBackTemp.png */,
+				B3451F4A23ED3F20000911E6 /* InsuranceCardFrontTemp.png */,
+			);
+			path = Images;
+			sourceTree = "<group>";
+		};
+		DAA83BEE8C7A1F0B3223FB2C /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				E218EDB6FD5E0D0AF2EAF6C4 /* Pods-SlingHealth_v1.debug.xcconfig */,
+				F7C7AA40F87F8D5CBD23F85D /* Pods-SlingHealth_v1.release.xcconfig */,
+				0746216DF15012362737BBCA /* Pods-SlingHealth_v1-SlingHealth_v1UITests.debug.xcconfig */,
+				F2637C431E3D72B6CABE4E4E /* Pods-SlingHealth_v1-SlingHealth_v1UITests.release.xcconfig */,
+				FE90EEEFE05BB5405D4C0FC9 /* Pods-SlingHealth_v1Tests.debug.xcconfig */,
+				49187506C09AA260F6C15958 /* Pods-SlingHealth_v1Tests.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		B32A36D823AE318C00901DA2 /* SlingHealth_v1 */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = B32A370423AE318D00901DA2 /* Build configuration list for PBXNativeTarget "SlingHealth_v1" */;
+			buildPhases = (
+				233479D4A3124C2D138967E0 /* [CP] Check Pods Manifest.lock */,
+				B32A36D523AE318C00901DA2 /* Sources */,
+				B32A36D623AE318C00901DA2 /* Frameworks */,
+				B32A36D723AE318C00901DA2 /* Resources */,
+				7285E9B4A75B91E0D3B3304A /* [CP] Embed Pods Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = SlingHealth_v1;
+			productName = SlingHealth_v1;
+			productReference = B32A36D923AE318C00901DA2 /* SlingHealth_v1.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		B32A36D123AE318C00901DA2 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1020;
+				LastUpgradeCheck = 1020;
+				ORGANIZATIONNAME = Priyanshu;
+				TargetAttributes = {
+					B32A36D823AE318C00901DA2 = {
+						CreatedOnToolsVersion = 10.2;
+					};
+				};
+			};
+			buildConfigurationList = B32A36D423AE318C00901DA2 /* Build configuration list for PBXProject "SlingHealth_v1" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = B32A36D023AE318C00901DA2;
+			productRefGroup = B32A36DA23AE318C00901DA2 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				B32A36D823AE318C00901DA2 /* SlingHealth_v1 */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		B32A36D723AE318C00901DA2 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B32A370E23AE3AE900901DA2 /* GoogleService-Info.plist in Resources */,
+				B32A36EA23AE318D00901DA2 /* LaunchScreen.storyboard in Resources */,
+				B32A36E723AE318D00901DA2 /* Assets.xcassets in Resources */,
+				B32559C223FF26E40005730E /* Main.storyboard in Resources */,
+				B3451F4C23ED3F21000911E6 /* InsuranceCardFrontTemp.png in Resources */,
+				B3451F4D23ED3F21000911E6 /* InsuranceCardBackTemp.png in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		233479D4A3124C2D138967E0 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-SlingHealth_v1-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		7285E9B4A75B91E0D3B3304A /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-SlingHealth_v1/Pods-SlingHealth_v1-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-SlingHealth_v1/Pods-SlingHealth_v1-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-SlingHealth_v1/Pods-SlingHealth_v1-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		B32A36D523AE318C00901DA2 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3377214E23D54CE200AB9BE6 /* MedsTableViewController.swift in Sources */,
+				B32A371823AE420300901DA2 /* UtilityFunctions.swift in Sources */,
+				B3B41E1A23D6752500669DC2 /* HealthProfileViewController.swift in Sources */,
+				33C2A8CE23E9372F00621E56 /* DetailedMedViewController.swift in Sources */,
+				B32A371523AE40FC00901DA2 /* CreateAccountViewController.swift in Sources */,
+				B32A371123AE3ED100901DA2 /* SignInViewController.swift in Sources */,
+				3377215423D55B9A00AB9BE6 /* FormMedViewController.swift in Sources */,
+				B3451F4F23ED40F6000911E6 /* InsuranceCardViewController.swift in Sources */,
+				B32A36DF23AE318C00901DA2 /* ViewController.swift in Sources */,
+				B32A36DD23AE318C00901DA2 /* AppDelegate.swift in Sources */,
+				3377215623D5620E00AB9BE6 /* MedFrequencyPicker.swift in Sources */,
+				3377215023D554FA00AB9BE6 /* Medication.swift in Sources */,
+				B32A36E523AE318C00901DA2 /* SlingHealth_v1.xcdatamodeld in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		B32A36E023AE318C00901DA2 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				B32A36E123AE318C00901DA2 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		B32A36E823AE318D00901DA2 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				B32A36E923AE318D00901DA2 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		B32A370223AE318D00901DA2 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.2;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		B32A370323AE318D00901DA2 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		B32A370523AE318D00901DA2 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = E218EDB6FD5E0D0AF2EAF6C4 /* Pods-SlingHealth_v1.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = ATGY97ZYZC;
+				INFOPLIST_FILE = SlingHealth_v1/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.Personal.SlingHealth-v1";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		B32A370623AE318D00901DA2 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = F7C7AA40F87F8D5CBD23F85D /* Pods-SlingHealth_v1.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = ATGY97ZYZC;
+				INFOPLIST_FILE = SlingHealth_v1/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.Personal.SlingHealth-v1";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		B32A36D423AE318C00901DA2 /* Build configuration list for PBXProject "SlingHealth_v1" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B32A370223AE318D00901DA2 /* Debug */,
+				B32A370323AE318D00901DA2 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		B32A370423AE318D00901DA2 /* Build configuration list for PBXNativeTarget "SlingHealth_v1" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B32A370523AE318D00901DA2 /* Debug */,
+				B32A370623AE318D00901DA2 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		B32A36E323AE318C00901DA2 /* SlingHealth_v1.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				B32A36E423AE318C00901DA2 /* SlingHealth_v1.xcdatamodel */,
+			);
+			currentVersion = B32A36E423AE318C00901DA2 /* SlingHealth_v1.xcdatamodel */;
+			path = SlingHealth_v1.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
+	};
+	rootObject = B32A36D123AE318C00901DA2 /* Project object */;
+}
