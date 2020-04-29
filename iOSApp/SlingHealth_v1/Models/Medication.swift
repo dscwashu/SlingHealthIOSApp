@@ -21,6 +21,7 @@ struct Medication: Decodable, Comparable {
     var prescriber: String!
     var notes: String!
     var stillTaking: Bool!
+    var reminder: Bool!
 }
 
 

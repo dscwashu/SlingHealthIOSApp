@@ -12,7 +12,7 @@ import Firebase
 import FirebaseDatabase
 
 @UIApplicationMain
-class AppDelegate: UIResponder, UIApplicationDelegate {
+class AppDelegate: UIResponder, UIApplicationDelegate, UNUserNotificationCenterDelegate {
 
     var window: UIWindow?
 
@@ -24,7 +24,21 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         let storage = Storage.storage()
         print(db)
         print(storage)
+        
+        UNUserNotificationCenter.current().delegate = self
+        
+        
+        //Notifications Request
+        UNUserNotificationCenter.current().requestAuthorization(options: [.alert, .badge, .sound]) { (granted, error) in
+            print("granted: \(granted)")
+        }
+        
         return true
+    }
+    
+    //Allows app to display notifications while app is running in foreground
+    func userNotificationCenter(_ center: UNUserNotificationCenter, willPresent notification: UNNotification, withCompletionHandler completionHandler: @escaping (UNNotificationPresentationOptions) -> Void) {
+        completionHandler([.alert, .sound])
     }
 
     func applicationWillResignActive(_ application: UIApplication) {

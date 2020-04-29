@@ -27,7 +27,7 @@ class DetailedMedViewController: UIViewController, UITableViewDataSource, UITabl
         return 1
     }
     func numberOfSections(in tableView: UITableView) -> Int {
-        return 7 //number of variables Medication has
+        return 8 //number of variables Medication has
     }
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = UITableViewCell(style: .subtitle, reuseIdentifier: "cell")
@@ -66,6 +66,12 @@ class DetailedMedViewController: UIViewController, UITableViewDataSource, UITabl
                 return "Yes"
             }
             return "No"
+        case 7:
+            guard let reminder = med.reminder else {return ""}
+            if(reminder) {
+                return "Yes"
+            }
+            return "No"
         default: return ""
         }
     }
@@ -83,6 +89,7 @@ class DetailedMedViewController: UIViewController, UITableViewDataSource, UITabl
         case 4: return "Prescriber"
         case 5: return "Notes"
         case 6: return "Still Taking?"
+        case 7: return "Reminder"
         default: return ""
         }
     }
@@ -144,15 +151,5 @@ class DetailedMedViewController: UIViewController, UITableViewDataSource, UITabl
 //    @IBAction func unwindToMedsTableViewController(segue: UIStoryboardSegue) {
 //        viewDidLoad()
 //    }
-
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destination.
-        // Pass the selected object to the new view controller.
-    }
-    */
 
 }

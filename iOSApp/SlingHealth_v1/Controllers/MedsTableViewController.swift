@@ -54,7 +54,7 @@ class MedsTableViewController: UITableViewController {
                                                 frequency: document.get("frequency") as? String,
                                                 prescriber: document.get("prescriber") as? String,
                                                 notes: document.get("notes") as? String,
-                                                stillTaking: document.get("stillTaking") as? Bool)
+                                                stillTaking: document.get("stillTaking") as? Bool, reminder: document.get("reminder") as? Bool)
                         if newMed.stillTaking != nil {
                             if newMed.stillTaking {
                                 self.medications[self.CURRENT]?.append(newMed)
@@ -98,6 +98,8 @@ class MedsTableViewController: UITableViewController {
         loadData()
         setUp()
         print("made it here2")
+        self.tableView.separatorStyle = UITableViewCell.SeparatorStyle.none
+
         // Uncomment the following line to preserve selection between presentations
         // self.clearsSelectionOnViewWillAppear = false
 
@@ -139,8 +141,37 @@ class MedsTableViewController: UITableViewController {
         }
         myCell.detailTextLabel?.numberOfLines=0 // line wrap
         myCell.detailTextLabel?.lineBreakMode = NSLineBreakMode.byWordWrapping
+        
+        myCell.clipsToBounds = true
+         let myView = UIView(frame: CGRect(x: 10, y: 5, width: 393, height: 87))
+         myView.backgroundColor = UIColor.white
+         myView.layer.masksToBounds = false
+         myView.layer.cornerRadius = 5
+         myView.layer.shadowColor = UIColor.lightGray.cgColor
+        myView.layer.shadowOpacity = 0.7
+         myView.layer.shadowOffset = CGSize(width: 1, height: 2)
+         myView.layer.shadowRadius = 2
+         myCell.addSubview(myView)
+         myCell.sendSubviewToBack(myView)
+        myCell.selectionStyle = .none
+        
+        
+//        let bgColorView = UIView()
+//        bgColorView.backgroundColor = UIColor.red
+//        myCell.selectedBackgroundView = bgColorView
+        
+        
         return myCell
     }
+    
+    override func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
+        return 100.0//Choose your custom row height
+    }
+    
+    override func tableView(_ tableView: UITableView, heightForHeaderInSection section: Int) -> CGFloat {
+        return 50.0
+    }
+    
     
     override func numberOfSections(in tableView: UITableView) -> Int {
         return 2
@@ -158,9 +189,25 @@ class MedsTableViewController: UITableViewController {
             }
             return "Discontinued"
         }
-       
         return nil
     }
+    //var selectionStyle: UITableViewCell.SelectionStyle
+    
+    override func tableView(_ tableView: UITableView, viewForHeaderInSection section: Int) -> UIView? {
+
+        let myLabel = UILabel()
+        myLabel.frame = CGRect(x: 10, y: 10, width: 320, height: 30)
+        myLabel.font = UIFont.boldSystemFont(ofSize: 20)
+        myLabel.text = self.tableView(tableView, titleForHeaderInSection: section)
+        myLabel.textColor = UIColor(hue: (240.0/360), saturation: 0.74, brightness: 0.92, alpha: 1.0)
+        let headerView = UIView()
+       // headerView.backgroundColor = UIColor(hue: (240.0/360), saturation: 0.74, brightness: 0.92, alpha: 1.0)
+//        headerView.backgroundColor = UIColor.white
+        headerView.addSubview(myLabel)
+        return headerView
+    }
+    
+    
     
     
     // define what to do on clicking an item here (most likely detailed view segue)
@@ -228,14 +275,5 @@ class MedsTableViewController: UITableViewController {
     }
     */
 
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destination.
-        // Pass the selected object to the new view controller.
-    }
-    */
 
 }

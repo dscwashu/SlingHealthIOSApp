@@ -30,13 +30,15 @@ class FormMedViewController: UIViewController, UIPickerViewDelegate, UIPickerVie
     @IBOutlet weak var notesInput: UITextField!
     @IBOutlet weak var prescriberInput: UITextField!
     @IBOutlet weak var stillTakingSwitch: UISwitch!
+    @IBOutlet weak var reminderSwitch: UISwitch!
+    @IBOutlet weak var setTimesButton: UIButton!
+    
     @IBOutlet weak var createEditButtonOutlet: UIButton!
+    
     
     var medication : Medication?
     var medId : Int?
-    
-    var reasonLabel : UILabel!
-    
+        
     override func viewDidLoad() {
         super.viewDidLoad()
         self.frequencyInput.delegate = self
@@ -54,16 +56,13 @@ class FormMedViewController: UIViewController, UIPickerViewDelegate, UIPickerVie
         //IDEA: place in storyboard and just toggle hidden field in code
         //rather than creating it programmatically. I couldn't figure out
         //how to "scroll" in the scroll view in storyboard.
-        reasonLabel = UILabel(frame: CGRect(x: 0, y: 0, width: 200, height: 21))
-        reasonLabel.center = CGPoint(x: 160, y: 284)
-        reasonLabel.text = "TESTING THIS THING"
+//        reasonLabel = UILabel(frame: CGRect(x: 0, y: 0, width: 200, height: 21))
+//        reasonLabel.center = CGPoint(x: 160, y: 284)
+//        reasonLabel.text = "TESTING THIS THING"
         
         
         setUpFieldsForEdit()
         
-        if stillTakingSwitch.isOn {
-            self.view.addSubview(reasonLabel)
-        }
     }
     
     func setUpFieldsForEdit() {
@@ -102,7 +101,11 @@ class FormMedViewController: UIViewController, UIPickerViewDelegate, UIPickerVie
         if med.stillTaking != nil {
             stillTakingSwitch.setOn(med.stillTaking!, animated: false)
         }
-        
+        if med.reminder != nil {
+            reminderSwitch.setOn(med.reminder!, animated: false)
+            setTimesButton.isHidden = !med.reminder!
+            
+        }
         if med.frequency != nil {
             guard let row = frequencyData.firstIndex(of: med.frequency) else {
                 print("invalid frequency")
@@ -136,6 +139,7 @@ class FormMedViewController: UIViewController, UIPickerViewDelegate, UIPickerVie
                   "prescriber" : prescriberInput.text!,
                   "notes" : notesInput.text!,
                   "stillTaking": stillTakingSwitch.isOn,
+                  "reminder" : reminderSwitch.isOn,
                   "user" : user!.uid
                 ]
               )
@@ -145,10 +149,20 @@ class FormMedViewController: UIViewController, UIPickerViewDelegate, UIPickerVie
                 }
                 else {
                     print("Document successfully written!")
-                    self.medication = Medication(id: nil, name: self.nameInput.text!, dose: self.doseInput.text!, startDate: self.dateInput.date, frequency: selectedFrequency, prescriber: self.prescriberInput.text!, notes: self.notesInput.text!, stillTaking: self.stillTakingSwitch.isOn)
+                    self.medication = Medication(id: nil, name: self.nameInput.text!, dose: self.doseInput.text!, startDate: self.dateInput.date, frequency: selectedFrequency, prescriber: self.prescriberInput.text!, notes: self.notesInput.text!, stillTaking: self.stillTakingSwitch.isOn, reminder: self.reminderSwitch.isOn)
 //                    unwind(for: <#T##UIStoryboardSegue#>, towards: DetailedMedViewController)
 //                    _ = self.navigationController?.popViewController(animated: true)
                         //.//listenDocumentLocal()
+//                    if !self.medication!.stillTaking || self.medication!.frequency == "As needed" { //remove if discontinued
+//                        removeMedNotifications(med: self.medication!)
+//                    }
+//                    else if self.medication!.frequency != "As needed" {
+//                        createMedNotifications(med: self.medication!)
+//                    }
+                    if !self.medication!.reminder { //no more reminders
+                        removeMedNotifications(med: self.medication!)
+                    }
+                    //FIXME if frequency is changed, update notifications accordingly
                 }
               }
         }
@@ -166,16 +180,18 @@ class FormMedViewController: UIViewController, UIPickerViewDelegate, UIPickerVie
     
     @IBAction func stillTakingChanged(_ sender: Any) {
         print("start stillTakingChanged")
-        if stillTakingSwitch.isOn {
-            self.view.addSubview(reasonLabel)
-        }
-        else {
-            reasonLabel.removeFromSuperview()
-        }
+//        if stillTakingSwitch.isOn {
+//            self.view.addSubview(reasonLabel)
+//        }
+//        else {
+//            reasonLabel.removeFromSuperview()
+//        }
         print("end stillTakingChanged")
     }
     
-    
+    @IBAction func reminderChanged(_ sender: Any) {
+        setTimesButton.isHidden = !reminderSwitch.isOn
+    }
     
     func numberOfComponents(in pickerView: UIPickerView) -> Int {
         return 1
@@ -197,6 +213,9 @@ class FormMedViewController: UIViewController, UIPickerViewDelegate, UIPickerVie
         if let vc = segue.destination as? DetailedMedViewController {
                vc.medication = editedMed
            }
+        else if let vc = segue.destination as? MedNotificationViewController {
+            vc.medication = editedMed
+        }
            
        }
     

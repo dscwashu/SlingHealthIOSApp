@@ -11,7 +11,14 @@
 		3377215023D554FA00AB9BE6 /* Medication.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3377214F23D554FA00AB9BE6 /* Medication.swift */; };
 		3377215423D55B9A00AB9BE6 /* FormMedViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3377215323D55B9A00AB9BE6 /* FormMedViewController.swift */; };
 		3377215623D5620E00AB9BE6 /* MedFrequencyPicker.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3377215523D5620E00AB9BE6 /* MedFrequencyPicker.swift */; };
+		3377F07524156F020023701F /* CareTeamTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3377F07424156F020023701F /* CareTeamTableViewController.swift */; };
+		3377F077241572E40023701F /* CareTeam.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3377F076241572E40023701F /* CareTeam.swift */; };
+		3377F0792415794C0023701F /* DetailedCareTeamsTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3377F0782415794C0023701F /* DetailedCareTeamsTableViewController.swift */; };
+		3377F07B24157D600023701F /* FormCareTeamsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3377F07A24157D600023701F /* FormCareTeamsViewController.swift */; };
 		33C2A8CE23E9372F00621E56 /* DetailedMedViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 33C2A8CD23E9372F00621E56 /* DetailedMedViewController.swift */; };
+		663F4A2424497B4500B3D674 /* Notification.swift in Sources */ = {isa = PBXBuildFile; fileRef = 663F4A2324497B4500B3D674 /* Notification.swift */; };
+		663F4A262449A1BB00B3D674 /* NotificationChangeTestViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 663F4A252449A1BB00B3D674 /* NotificationChangeTestViewController.swift */; };
+		669F27012452892100C573E0 /* MedNotificationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 669F27002452892100C573E0 /* MedNotificationViewController.swift */; };
 		7A79B687E50DEEE5A0A9FD0E /* Pods_SlingHealth_v1.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1B16689F832C9DE59E9798FB /* Pods_SlingHealth_v1.framework */; };
 		B32559C223FF26E40005730E /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B32A36E023AE318C00901DA2 /* Main.storyboard */; };
 		B32A36DD23AE318C00901DA2 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B32A36DC23AE318C00901DA2 /* AppDelegate.swift */; };
@@ -26,6 +33,7 @@
 		B3451F4C23ED3F21000911E6 /* InsuranceCardFrontTemp.png in Resources */ = {isa = PBXBuildFile; fileRef = B3451F4A23ED3F20000911E6 /* InsuranceCardFrontTemp.png */; };
 		B3451F4D23ED3F21000911E6 /* InsuranceCardBackTemp.png in Resources */ = {isa = PBXBuildFile; fileRef = B3451F4B23ED3F21000911E6 /* InsuranceCardBackTemp.png */; };
 		B3451F4F23ED40F6000911E6 /* InsuranceCardViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B3451F4E23ED40F6000911E6 /* InsuranceCardViewController.swift */; };
+		B393EFEB2411EFC500BF7E5D /* PharmacyMapsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B393EFEA2411EFC500BF7E5D /* PharmacyMapsViewController.swift */; };
 		B3B41E1A23D6752500669DC2 /* HealthProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B3B41E1923D6752500669DC2 /* HealthProfileViewController.swift */; };
 /* End PBXBuildFile section */
 
@@ -36,8 +44,15 @@
 		3377214F23D554FA00AB9BE6 /* Medication.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Medication.swift; sourceTree = "<group>"; };
 		3377215323D55B9A00AB9BE6 /* FormMedViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FormMedViewController.swift; sourceTree = "<group>"; };
 		3377215523D5620E00AB9BE6 /* MedFrequencyPicker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MedFrequencyPicker.swift; sourceTree = "<group>"; };
+		3377F07424156F020023701F /* CareTeamTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CareTeamTableViewController.swift; sourceTree = "<group>"; };
+		3377F076241572E40023701F /* CareTeam.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CareTeam.swift; sourceTree = "<group>"; };
+		3377F0782415794C0023701F /* DetailedCareTeamsTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailedCareTeamsTableViewController.swift; sourceTree = "<group>"; };
+		3377F07A24157D600023701F /* FormCareTeamsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FormCareTeamsViewController.swift; sourceTree = "<group>"; };
 		33C2A8CD23E9372F00621E56 /* DetailedMedViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailedMedViewController.swift; sourceTree = "<group>"; };
 		49187506C09AA260F6C15958 /* Pods-SlingHealth_v1Tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SlingHealth_v1Tests.release.xcconfig"; path = "Target Support Files/Pods-SlingHealth_v1Tests/Pods-SlingHealth_v1Tests.release.xcconfig"; sourceTree = "<group>"; };
+		663F4A2324497B4500B3D674 /* Notification.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Notification.swift; sourceTree = "<group>"; };
+		663F4A252449A1BB00B3D674 /* NotificationChangeTestViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationChangeTestViewController.swift; sourceTree = "<group>"; };
+		669F27002452892100C573E0 /* MedNotificationViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MedNotificationViewController.swift; sourceTree = "<group>"; };
 		B32A36D923AE318C00901DA2 /* SlingHealth_v1.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SlingHealth_v1.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		B32A36DC23AE318C00901DA2 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		B32A36DE23AE318C00901DA2 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -57,6 +72,7 @@
 		B3451F4A23ED3F20000911E6 /* InsuranceCardFrontTemp.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = InsuranceCardFrontTemp.png; sourceTree = "<group>"; };
 		B3451F4B23ED3F21000911E6 /* InsuranceCardBackTemp.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = InsuranceCardBackTemp.png; sourceTree = "<group>"; };
 		B3451F4E23ED40F6000911E6 /* InsuranceCardViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InsuranceCardViewController.swift; sourceTree = "<group>"; };
+		B393EFEA2411EFC500BF7E5D /* PharmacyMapsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PharmacyMapsViewController.swift; sourceTree = "<group>"; };
 		B3B41E1923D6752500669DC2 /* HealthProfileViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HealthProfileViewController.swift; sourceTree = "<group>"; };
 		E218EDB6FD5E0D0AF2EAF6C4 /* Pods-SlingHealth_v1.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SlingHealth_v1.debug.xcconfig"; path = "Target Support Files/Pods-SlingHealth_v1/Pods-SlingHealth_v1.debug.xcconfig"; sourceTree = "<group>"; };
 		E6B72B83E89A676A1F832AE4 /* Pods_SlingHealth_v1Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SlingHealth_v1Tests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -155,6 +171,12 @@
 				33C2A8CD23E9372F00621E56 /* DetailedMedViewController.swift */,
 				3377214D23D54CE200AB9BE6 /* MedsTableViewController.swift */,
 				B3451F4E23ED40F6000911E6 /* InsuranceCardViewController.swift */,
+				B393EFEA2411EFC500BF7E5D /* PharmacyMapsViewController.swift */,
+				3377F07424156F020023701F /* CareTeamTableViewController.swift */,
+				3377F0782415794C0023701F /* DetailedCareTeamsTableViewController.swift */,
+				3377F07A24157D600023701F /* FormCareTeamsViewController.swift */,
+				663F4A252449A1BB00B3D674 /* NotificationChangeTestViewController.swift */,
+				669F27002452892100C573E0 /* MedNotificationViewController.swift */,
 			);
 			path = Controllers;
 			sourceTree = "<group>";
@@ -163,6 +185,8 @@
 			isa = PBXGroup;
 			children = (
 				3377214F23D554FA00AB9BE6 /* Medication.swift */,
+				3377F076241572E40023701F /* CareTeam.swift */,
+				663F4A2324497B4500B3D674 /* Notification.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -317,16 +341,24 @@
 			buildActionMask = 2147483647;
 			files = (
 				3377214E23D54CE200AB9BE6 /* MedsTableViewController.swift in Sources */,
+				663F4A262449A1BB00B3D674 /* NotificationChangeTestViewController.swift in Sources */,
 				B32A371823AE420300901DA2 /* UtilityFunctions.swift in Sources */,
 				B3B41E1A23D6752500669DC2 /* HealthProfileViewController.swift in Sources */,
 				33C2A8CE23E9372F00621E56 /* DetailedMedViewController.swift in Sources */,
+				3377F07B24157D600023701F /* FormCareTeamsViewController.swift in Sources */,
 				B32A371523AE40FC00901DA2 /* CreateAccountViewController.swift in Sources */,
+				3377F0792415794C0023701F /* DetailedCareTeamsTableViewController.swift in Sources */,
 				B32A371123AE3ED100901DA2 /* SignInViewController.swift in Sources */,
+				3377F07524156F020023701F /* CareTeamTableViewController.swift in Sources */,
+				B393EFEB2411EFC500BF7E5D /* PharmacyMapsViewController.swift in Sources */,
 				3377215423D55B9A00AB9BE6 /* FormMedViewController.swift in Sources */,
 				B3451F4F23ED40F6000911E6 /* InsuranceCardViewController.swift in Sources */,
+				663F4A2424497B4500B3D674 /* Notification.swift in Sources */,
 				B32A36DF23AE318C00901DA2 /* ViewController.swift in Sources */,
+				3377F077241572E40023701F /* CareTeam.swift in Sources */,
 				B32A36DD23AE318C00901DA2 /* AppDelegate.swift in Sources */,
 				3377215623D5620E00AB9BE6 /* MedFrequencyPicker.swift in Sources */,
+				669F27012452892100C573E0 /* MedNotificationViewController.swift in Sources */,
 				3377215023D554FA00AB9BE6 /* Medication.swift in Sources */,
 				B32A36E523AE318C00901DA2 /* SlingHealth_v1.xcdatamodeld in Sources */,
 			);
@@ -475,15 +507,18 @@
 			baseConfigurationReference = E218EDB6FD5E0D0AF2EAF6C4 /* Pods-SlingHealth_v1.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = ATGY97ZYZC;
+				DEVELOPMENT_TEAM = "";
 				INFOPLIST_FILE = SlingHealth_v1/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.2;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = "com.Personal.SlingHealth-v1";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -494,15 +529,18 @@
 			baseConfigurationReference = F7C7AA40F87F8D5CBD23F85D /* Pods-SlingHealth_v1.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = ATGY97ZYZC;
+				DEVELOPMENT_TEAM = "";
 				INFOPLIST_FILE = SlingHealth_v1/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.2;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = "com.Personal.SlingHealth-v1";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
